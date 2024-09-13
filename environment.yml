@@ -1,0 +1,8 @@
+name: virconsens
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - biopython>=1.70
+  - pysam>=0.2
