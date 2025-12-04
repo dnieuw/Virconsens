@@ -1,5 +1,15 @@
+import os
+import re
 from setuptools import setup, find_packages
-from virconsens import __version__
+
+# Read the version from __init__.py without importing the package
+with open(os.path.join("virconsens", "__init__.py"), "r") as f:
+    version_file = f.read()
+    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file, re.M)
+    if version_match:
+        __version__ = version_match.group(1)
+    else:
+        raise RuntimeError("Unable to find version string.")
 
 setup(name='virconsens',
     version=__version__,
