@@ -27,6 +27,10 @@ optional arguments:
                         Reference genome fasta file
   -vf VARIANTFILE, --variantfile VARIANTFILE
                         Output path for variant tsv file
+  -p COVERAGEPLOT, --coverageplot COVERAGEPLOT
+                        Output path for coverage plot html file
+  --freqfile FREQFILE
+                        Output path for frequency table (CSV file)
   -c CORES, --cores CORES
                         Number of cores to use for processing
   -d MINDEPTH, --mindepth MINDEPTH
