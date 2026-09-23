@@ -220,7 +220,7 @@ def main():
     #Make an array of start-stop intervals to parallelize processing
     genome_length = len(refseq)
     split = int(genome_length/args.cores)
-    batch = [[i*split+1,(i+1)*split+1, args.bam, args.maxdepth, args.reference] for i in range(args.cores)]
+    batch = [[i*split, (i+1)*split, args.bam, args.maxdepth, args.reference] for i in range(args.cores)]
 
     #Adjust the last "stop" to be the genome length
     batch[-1][1] = genome_length
