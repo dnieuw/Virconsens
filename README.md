@@ -38,6 +38,8 @@ optional arguments:
                         alleles
   -af MINAF, --minAF MINAF
                         Minimal allele frequency to output
+  -a AMBIGUOUS, --ambiguous AMBIGUOUS
+                        Use IUPAC ambiguity codes
   --maxdepth MAXDEPTH
                         Maximum depth to consider at any position
 ```
